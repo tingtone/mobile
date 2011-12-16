@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="page_info_view">View page info</string>
+	<string name="ssl_certificate">Security certificate</string>
+	<string name="expires_on">Expires on:</string>
+	<string name="issued_on">Issued on:</string>
+	<string name="validity_period">Validity:</string>
+	<string name="issued_by">Issued by:</string>
+	<string name="org_unit">Organizational unit:</string>
+	<string name="org_name">Organization:</string>
+	<string name="common_name">Common name:</string>
+	<string name="issued_to">Issued to:</string>
+	<string name="view_certificate">View certificate</string>
+	<string name="ssl_continue">Continue</string>
+	<string name="security_warning">Security warning</string>
+	<string name="ssl_not_yet_valid">This certificate is not valid yet.</string>
+	<string name="ssl_expired">This certificate has expired.</string>
+	<string name="ssl_mismatch">The name of the site does not match the name on the certificate.</string>
+    <string name="ssl_warnings_header">There are problems with the security certificate for this site.</string>
+    <string name="ssl_untrusted">This certificate is not from a trusted authority.</string>
+    <string name="database_init_msg">first time using,initialize database</string>
+    <string name="app_name">Mobile Browser</string>
+    <string name="go_home">Go Home</string>
+    <string name="home_page">Home Page</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="full_screen">Full screen</string>
+    <string name="exit_full_screen">Exit full screen</string>
+    <string name="reload">Reload</string>
+    <string name="stop">Stop</string>
+    <string name="stop_toast_text">Stopping</string>
+    <string name="forward">Forward</string>
+    <string name="data_init_failed">Database initialize failed!</string>
+    <string name="market_init_failed">Start market failed!</string>
+    
+    <string name="set_my_fav">Set my favourite</string>
+    <string name="title_text">Site title:</string>
+    <string name="url_text">Url:</string>
+    <string name="remove">Remove</string>
+    <string name="fav_exceed_warning">The number of favourite sites exceeds 10! </string>
+    
+    <string name="tips">Tips: Dragging out the pages, you can switch them.</string>
+    <string name="empty_data_error">Title or url cannot be empty!</string>
+    <string name="url_invalid">Invalid url, need protocol!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="my_fav">My favourite</string>
+    <string name="choose_site">Select site</string>
+    <string name="search">Go</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="edit_fav">Edit favourite</string>
+    <string name="choose_news_type">Choose news type</string>
+    <string name="fav_list_add">Add</string>
+    
+    <string name="warning">Warning</string>
+     <string name="find_menu">Find</string>
+    <string name="close_menu_id">Close</string>
+    <string name="exit_menu">Exit</string>
+    <string name="quit_confirm_message">Are you sure want to quit ?</string>
+    <string name="change_default_message">Change default tab ?</string>
+    <string name="set_as_default">Set as default</string>
+    <string name="find_dot">Find on page</string>
+    <!-- Menu item to switch to text selection mode for copy and paste. -->
+    <string name="select_dot">Select text</string>
+    <plurals name="matches_found">
+        <!-- Case of no matches -->
+        <item quantity="zero">No matches</item>
+        <!-- Case of one match -->
+        <item quantity="one">1 match</item>
+        <!-- Case of "few" (two) matches -->
+        <item quantity="few"><xliff:g id="number" example="2">%d</xliff:g> matches</item>
+        <!-- Case of several matches -->
+        <item quantity="other"><xliff:g id="number" example="137">%d</xliff:g> matches</item>
+    </plurals>
+
+    <string name="contextmenu_savelink">Save link</string>
+    <!-- Context Menu item to send the url of the selected link to someone else,
+            via Gmail or another app -->
+    <string name="contextmenu_sharelink">Share link</string>
+    <!-- Context Menu item -->
+    <string name="contextmenu_copy">Copy</string>
+    <!-- Context Menu item to copy the url of the selected link to the
+            clipboard -->
+    <string name="contextmenu_copylink">Copy link URL</string>
+    <!-- Context Menu item to view the image by itself in the browser -->
+    <string name="contextmenu_view_image">View image</string>
+    <!-- Context Menu item to open the dialer app with the selected phone number
+            -->
+    <string name="contextmenu_dial_dot">Dial\u2026</string>
+    <!-- Context Menu item to add the selected phone number to the address book.
+            -->
+    <string name="contextmenu_add_contact">Add contact</string>
+    <!-- Context Menu item to send an email using the selected email address.-->
+    <string name="contextmenu_send_mail">Send email</string>
+    <!-- Context Menu item to show the currently selected address in the Maps
+            application -->
+    <string name="contextmenu_map">Map</string>
+
+    <string name="set_default_tab">Long press to set default tab</string>
+    <string name="default_tab">Default Tab</string>
+    <string name="name">Name</string>
+    <string name="http">http://</string>
+    <string name="location">Location</string>
+    <string name="save">OK</string>
+    <!-- Button label to cancel saving a bookmark. -->
+    <string name="do_not_save">Cancel</string>
+    <string name="add_bookmark_short">Add</string>
+    <string name="tab_bookmarks">Bookmark</string>
+    <string name="tab_most_visited">Most visited</string>
+    <string name="tab_res">Resource</string>
+    <string name="tab_history">History</string>
+    <string name="tab_out_max_warning">The number of tabs exceed!</string>
+    
+    <string name="tab_news">News</string>
+    <string name="tab_social">Social</string>
+    <string name="tab_shopping">Shopping</string>
+    <string name="tab_life">Life</string>
+    <string name="tab_portal">Portal</string>
+    <string name="tab_sports">Sports and Game</string>
+    <string name="tab_newmedia">New Media</string>
+    <string name="tab_other">Other</string>
+    <string name="tab_banking">Banking</string>
+    <string name="tab_entertainment">Entertainment</string>
+    <string name="tab_travel">Travel</string>
+    <string name="tab_car">Car</string>
+    <string name="tab_social1">Social1</string>
+
+    <string name="added_to_bookmarks">Added to bookmarks</string>
+        <string name="removed_from_bookmarks">Removed from bookmarks</string>
+        <string name="clear_history">Clear history</string>
+    <!-- History screen title; appears in title bar -->
+    <string name="browser_history">Recently-visited pages</string>
+    <!-- Appears on History screen if no history is found -->
+    <string name="empty_history">Browser history is empty.</string>
+        <string name="contextmenu_openlink">Open</string>
+    <!-- Context Menu item to open the currently selected link in a new
+            window. -->
+    <string name="contextmenu_openlink_newwindow">Open in new window</string>
+    <!-- Context Menu item to create a bookmark for the url of the currently
+            selected link. -->
+    <string name="contextmenu_bookmark_thislink">Bookmark link</string>
+        <string name="save_to_bookmarks">Bookmark</string>
+    <string name="add_to_bookmarks">Add bookmark</string>
+    <!-- Menu item on the bookmarks page, to edit an existing bookmark -->
+    <string name="edit_bookmark">Edit bookmark</string>
+    <!-- Context menu item to create a shortcut to the bookmark on the desktop -->
+    <string name="create_shortcut_bookmark">Add shortcut to Home</string>
+    <!-- Context menu item to open the currently highlighted bookmark -->
+    <string name="open_bookmark">Open</string>
+    <!-- Menu item to remove the currently highlighted bookmark-->
+    <string name="remove_bookmark">Delete bookmark</string>
+    <!-- Context menu item to remove a history item from bookmarks -->
+    <string name="remove_from_bookmarks">Remove from bookmarks</string>
+    <!-- Menu item to remove the currently highlighted history entry from the list of previously visited sites -->
+    <string name="remove_history_item">Remove from history</string>
+        <string name="bookmark_page">Bookmark page</string>
+        <string name="open_in_new_window">Open in new window</string>
+        <string name="browser_bookmarks_page_bookmarks_text">Bookmarks</string>
+        <string name="switch_to_thumbnails">Thumbnail view</string>
+        
+    <string name="switch_to_list">List view</string>
+    <string name="delete_bookmark_warning">Bookmark %s will be deleted.</string>
+        <string name="bookmark_url_not_valid">URL is not valid.</string>
+    <string name="delete_bookmark">Delete</string>
+        <string name="current_page">from\u0020</string>
+        <string name="bookmark_saved">Saved to bookmarks.</string>
+        <string name="bookmark_needs_title">"Bookmark must have a name."</string>
+        <string name="bookmark_needs_url">"Bookmark must have a location."</string>
+        <string name="no_database">No database!</string>
+        <string name="search_hint">Search or URL</string>
+        <string name="global_search_description">Mobile browser search</string>
+    
+</resources>
+

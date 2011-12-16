@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res/com.web.all"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tab_indicator_background"
+    >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    
+    <com.web.all.TabBar android:id="@+id/tabBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:gravity="center_horizontal"
+        android:layout_weight="5.0"
+        android:descendantFocusability="afterDescendants"
+        />
+         <ImageView
+                android:id="@+id/tab_new"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:layout_weight="1.0"
+                android:src="@drawable/plus_32"/>
+        </LinearLayout>
+            
+  <FrameLayout android:id="@+id/web"
+     android:layout_width="fill_parent" 
+     android:layout_height="0px"
+     android:layout_weight="1"
+     />   
+		
+		<com.web.all.MyProgressBar
+			android:id="@+id/my_progress_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:singleLine="true"
+			android:textSize="12sp"
+			android:ellipsize="marquee"
+		/>
+ 
+</LinearLayout>

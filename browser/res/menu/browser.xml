@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/MAIN_MENU">
+		<item
+		android:id="@+id/edit_fav_menu_id"
+		android:title="@string/edit_fav"
+		android:icon="@*android:drawable/ic_menu_edit"
+		android:alphabeticShortcut="e" />
+		
+		<item
+		android:id="@+id/reload_menu_id"
+		android:title="@string/reload"
+		android:icon="@*android:drawable/ic_menu_view"
+		android:alphabeticShortcut="d" />
+		
+		<item
+		android:id="@+id/forward_menu_id"
+		android:title="@string/forward"
+		android:icon="@drawable/ic_menu_forward"
+		android:alphabeticShortcut="k" />
+				
+		
+		<item
+		android:id="@+id/bookmark_menu_id"
+		android:title="@string/save_to_bookmarks"
+		android:icon="@drawable/ic_menu_bookmarks"
+		android:alphabeticShortcut="b" />
+		
+		<item
+		android:id="@+id/search_menu_id"
+		android:title="@string/search"
+		android:icon="@*android:drawable/ic_menu_search"
+		android:alphabeticShortcut="s" />
+		
+		<item
+		android:id="@+id/full_screen_menu_id"
+		android:title="@string/full_screen"
+		android:icon="@drawable/full_screen_icon"/>
+		
+		<item
+		android:id="@+id/find_menu_id"
+		android:title="@string/find_menu"
+		android:icon="@drawable/find_on_page_icon"
+		android:alphabeticShortcut="f" />
+		
+		<item
+		android:id="@+id/edit_homepage_menu_id"
+		android:title="@string/home_page"
+		android:icon="@drawable/ic_menu_home"/>
+		
+		<item
+		android:id="@+id/clear_cache_menu_id"
+		android:title="@string/clear_cache"
+		android:icon="@*android:drawable/ic_menu_delete"
+		android:alphabeticShortcut="c" />
+		
+		<item
+		android:id="@+id/select_text_menu_id"
+		android:title="@string/select_dot"
+		android:alphabeticShortcut="t" />
+		
+		<item
+		android:id="@+id/exit_menu_id"
+		android:title="@string/exit_menu"
+		android:icon="@drawable/ic_menu_exit"
+		android:alphabeticShortcut="x" />
+		
+	</group>
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   android:installLocation="auto"
+ package="com.web.all" android:versionCode="126" android:versionName="6.9">
+	<uses-sdk android:minSdkVersion="3" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+	<application android:icon="@drawable/z_app" android:label="@string/app_name">
+		<activity android:name=".WebBrowse" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden"
+			android:windowSoftInputMode="adjustResize"
+			android:launchMode="singleTop" android:alwaysRetainTaskState="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+			</intent-filter>
+            <!-- This intent-filter identifies this activity as "searchable" -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <!--  For these schemes where any of these particular MIME types
+                  have been supplied, we are a good candidate. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+                <data android:mimeType="application/vnd.wap.xhtml+xml"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="" />
+                <data android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- This metadata entry provides further configuration details for searches -->
+            <!-- that are handled by this activity. -->
+            
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+			
+			
+		</activity>
+		
+		        <activity android:name="CombinedBookmarkHistoryActivity" android:label=""
+                  android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity android:name="BrowserBookmarksPage" android:label="bookmark"
+                  android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name="MostVisitedActivity" android:label=""
+                android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden"/>
+		
+		        <activity android:name="BrowserHistoryPage" android:label=""
+                  android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name="AddBookmarkPage" android:label="Save bookmark" android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="FavListActivity" android:label="Favourite list"
+        	android:configChanges="orientation|keyboardHidden">
+       	</activity>
+       	<activity android:name="FavSetActivity" android:label="Favourite site" android:theme="@android:style/Theme.Dialog"
+       		android:configChanges="orientation|keyboardHidden">
+    	</activity>
+       	<activity android:name="EditHomeActivity" android:label="Edit home page" android:theme="@android:style/Theme.Dialog"
+        	android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+	 <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" 
+       		android:theme="@android:style/Theme.Translucent.NoTitleBar">
+ 	</activity>
+	 <activity android:name="com.millennialmedia.android.VideoPlayer" 
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:configChanges="keyboardHidden|orientation|keyboard" >
+        </activity>
+     <activity android:name="com.admob.android.ads.AdMobActivity" 
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+              android:configChanges="orientation|keyboard|keyboardHidden"
+              />				
+        <meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+		
+	<activity android:name="SiteList" android:label="Site list" android:configChanges="orientation|keyboardHidden">
+	</activity>
+</application>
+</manifest>  
+

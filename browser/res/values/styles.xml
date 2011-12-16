@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FindDialog">
+        <item name="android:windowEnterAnimation">@anim/find_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/find_dialog_exit</item>
+    </style>
+
+
+</resources>
+
